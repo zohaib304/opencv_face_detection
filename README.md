@@ -6,7 +6,7 @@ image or a real time video.
 [Haar Cascade](https://github.com/opencv/opencv/tree/master/data/haarcascades)
 
 ### Run on a single image
-This command runs the model on a single image, and outout the image with face detected.
+This command runs the model on a single image, and output the image with face detected.
 
 ```
 # OpenCV must be installed.

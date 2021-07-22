@@ -1,9 +1,16 @@
 """
 CS619 - Test Phase
+
+Run on a single image
+This command runs the model on a single image, and output the image with face detected.
+
+> python main.py --image path_to_image_file
+
 """
 
 import cv2
 import argparse
+
 
 def opencvFaceDetection(image):
 
