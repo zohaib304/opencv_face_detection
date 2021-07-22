@@ -1,5 +1,9 @@
-import cv2
+"""
+CS619 - Test Phase
+"""
 
+import cv2
+import argparse
 
 def opencvFaceDetection(image):
 
@@ -25,5 +29,10 @@ def opencvFaceDetection(image):
     cv2.destroyAllWindows()
 
 
-opencvFaceDetection("face.jpg")
+if __name__ == '__main__':
 
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-i", "--image", required=True, help="Path to image file")
+    args = parser.parse_args()
+
+    opencvFaceDetection(args.image)
